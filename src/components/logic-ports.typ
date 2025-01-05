@@ -457,7 +457,6 @@
 
 #let and-port = logic-port.with(
   "and-port",
-  //style => (style.ieee-multipoles)("and", style),
   style => {
     if not style.european-style {
       (style.ieee-multipoles)("and", style)
