@@ -41,9 +41,9 @@
 
     let draw-Variable-Line = (label-xScale: 0.4, tip-xScale: 0.4, wiper-xScale: 0.9, tip-yScale: 2, wiper-yScale: 2) => {
       anchor("wiper", (wiper-xScale * -x, -height/2 * wiper-yScale))
-      anchor("lable", (label-xScale * -x, -height/2 * wiper-yScale))
+      anchor("label", (label-xScale * -x, -height/2 * wiper-yScale))
       anchor("tip", (tip-xScale * x, height/2 * tip-yScale))
-      line("wiper", "lable", "tip", stroke: body-stroke)
+      line("wiper", "label", "tip", stroke: body-stroke)
     }
 
     if name in ("generic", "resistor") {

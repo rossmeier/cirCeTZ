@@ -84,10 +84,12 @@
                                    "b",
                                    "start", "end", "mid", "component", "rect"
                                    ), (name) => {
-                                    if name != "wiper" {
+                                    if not name in ("wiper", "label") {
                                         show-anchor("a." + name, offset: "west", pos: (30deg, 0.2))
-                                    } else {
+                                    } else  if name == "wiper" {
                                       show-anchor("a." + name, offset: "east", pos: (180deg, 0.2))
+                                    } else if name == "label" {
+                                      show-anchor("a." + name, offset: "west", pos: (0deg, 0.2))
                                     }
                                   })
   }
