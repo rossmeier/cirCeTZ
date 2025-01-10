@@ -14,7 +14,10 @@
     ),
   )
 
-  anchor("temp", (0,1.75))
+  let xDistance = 2
+  let yDistance = 2.5
+
+  anchor("temp", (0, yDistance))
   for gs in (
     ground,
     tlground,
@@ -29,15 +32,17 @@
     vcc,
     vee,
   ) {
-    gs((rel: (0, -2), to: "temp"), name: "temp")
+    anchor("temp", (rel:(0,-yDistance), to: "temp"))
+    content((), [#gs])
+    gs((rel: (xDistance, 0), to: "temp"), name: "a")
 
-    gs((rel: (1.5, 0), to: "temp"), name: "a")
+    gs((rel: (xDistance, 0), to: "a"), name: "a")
     show-anchor("a.center", offset: "west", pos: (0deg, 0.1))
     show-anchor("a.default", offset: "north-east", pos: (235deg, 0.1))
     show-anchor("a.left", offset: "east", pos: (150deg, 0.2))
     show-anchor("a.right", offset: "west", pos: (30deg, 0.2))
 
-    gs((rel: (1.5, 0), to: "a"), name: "a")
+    gs((rel: (xDistance, 0), to: "a"), name: "a")
     show-anchor("a.north", offset: "south", pos: (90deg, 0.2))
     show-anchor("a.south", offset: "north", pos: (270deg, 0.2))
     show-anchor("a.east", offset: "west", pos: (0deg, 0.2))
