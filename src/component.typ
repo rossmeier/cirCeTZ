@@ -23,7 +23,8 @@
     voltage: "european",
     port: "american",
     resistor: "american",
-    inductor: "cute"
+    inductor: "cute",
+    diode: "empty",
   ),
   stroke: (thickness: 0.4pt),
   thickness: 2,

@@ -1,6 +1,7 @@
 #import "/src/components/amplifiers.typ": *
 #import "/src/components/arrows.typ": *
 #import "/src/components/capacitors.typ": *
+#import "/src/components/diodes.typ": *
 #import "/src/components/flipflops.typ": *
 #import "/src/components/grounds-supplies.typ": *
 #import "/src/components/inductors.typ": *
