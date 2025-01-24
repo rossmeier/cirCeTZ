@@ -7,6 +7,7 @@
 #import "/src/components/inductors.typ": *
 #import "/src/components/instruments.typ": *
 #import "/src/components/logic-ports.typ": *
+#import "/src/components/mechanicals.typ": *
 #import "/src/components/resistive-bipoles.typ": *
 #import "/src/components/sources.typ": *
 #import "/src/components/terminal-shapes.typ": *
