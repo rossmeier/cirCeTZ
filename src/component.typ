@@ -174,8 +174,17 @@
         )
       }
     }
+    // todo: this is super ugly, would be way better to pass an inverted filter to copy-anchors and not overwrite start and end
+    if pos.len() == 2 {
+      anchor("_start", "start")
+      anchor("_end", "end")
+    }
     if name != none {
       utils.copy-anchors("component")
+    }
+    if pos.len() == 2 {
+      anchor("start", "_start")
+      anchor("end", "_end")
     }
   })
   for p in pos {
